@@ -60,4 +60,5 @@ https://drive.google.com/file/d/1wiVK1lAHcm_w5yIpVdBW0s9iV1_vkGLj/view?usp=shari
 
 
 
-Visual Representation: [preview]([inked-lady/img/reading.jpg](https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg))
+Visual Representation: [preview](https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg)
+

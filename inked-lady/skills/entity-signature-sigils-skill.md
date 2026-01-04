@@ -1,11 +1,11 @@
-#Entity Signature Sigils Skill Template
+# Entity Signature Sigils Skill Template
 
-##Title: Entity Signature Sigils
+## Title: Entity Signature Sigils
 
 **Description:**
 An intricate esoteric symbol that captures your archetype, personality, and energies, used for self-empowering, in meditative states or as a gift for someoane close. Inspired by sources like Dascent's sigils and traditional methods.
 
-##How to Create:
+## How to Create:
 
 Entity Signature Sigil is a visual representation of the Esoteric Reading System developed by Dan N
 
@@ -19,7 +19,7 @@ Discover the profound wisdom encoded within your date of birth and embark on a t
 
 Using ancient wisdom of numerology, the symbolic language of astrology, the depth of Jungian psychology, and the potent archetypes of the Tarot's Major Arcana, this guide presents a revolutionary approach to self-understanding.
 
-##You will discover:
+## You will discover:
 
 The Core Philosophy. Understand the esoteric principle that your birth date is not arbitrary but a chosen reflection of your soul's desired experiences for growth and evolution in this lifetime.
 
@@ -42,15 +42,22 @@ A Comprehensive Reference Guide. Benefit from a detailed list of all 21 Major Ar
 
 **Your key to:**
 
->Gaining profound self-awareness and understanding your core predispositions.
->Identifying your soul's mission and the path of your destiny.
->Recognizing both the gifts and potential challenges associated with your archetypes.
->Moving from unconscious reaction to conscious creation in your life.
->Connecting with your inner wisdom and intuitive guidance.
->Understanding the deeper energetic influences shaping your experiences.
->Embark on this illuminating journey today and unlock the unique story written in the stars and numbers of your birth date!
+> Gaining profound self-awareness and understanding your core predispositions.
+
+> Identifying your soul's mission and the path of your destiny.
+
+> Recognizing both the gifts and potential challenges associated with your archetypes.
+
+> Moving from unconscious reaction to conscious creation in your life.
+
+> Connecting with your inner wisdom and intuitive guidance.
+
+> Understanding the deeper energetic influences shaping your experiences.
+
+> Embark on this illuminating journey today and unlock the unique story written in the stars and numbers of your birth date!
 
 https://drive.google.com/file/d/1wiVK1lAHcm_w5yIpVdBW0s9iV1_vkGLj/view?usp=sharing
 
 
-Visual Representation: [preview](img/reading.jpg)
+
+Visual Representation: [preview]([inked-lady/img/reading.jpg](https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg))

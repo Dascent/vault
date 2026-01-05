@@ -64,7 +64,8 @@ vault/
 ├── selene/ (coming soon)
 ├── sorelai/ (coming soon)
 └── framework-core/ (templates and protocols)
-
+```
+---
 
 ## Framework Philosophy
 

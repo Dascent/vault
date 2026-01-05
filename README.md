@@ -108,7 +108,10 @@ This framework is being developed as:
 - **Premium implementations** - Customized shape builds available for purchase  
 - **Consulting services** - Personalized AI companion design
 
-**Interested in custom work?** Contact via [shapes.inc/dascent]
+**Interested in custom work?**   
+- **Shapes.inc:** [**@dascent**](https://shapes.inc/u/dascent)  
+- **Email:** [Coming Soon]  
+- **GitHub Issues:** [Open an Issue](https://github.com/Dascent/vault/issues)
 
 ## Technical Requirements
 
@@ -126,10 +129,7 @@ This is a curated framework under active development. If you're interested in co
 - **v0.1** (2026-01-05) - Initial repository structure, Inked Lady baseline  
 - **v0.2** (Coming) - Adaptive Skill Framework integration, Selene implementation
 
-**Interested in custom work?**   
-- **Shapes.inc:** [**@dascent**](https://shapes.inc/u/dascent)  
-- **Email:** [Coming Soon]  
-- **GitHub Issues:** [Open an Issue](https://github.com/Dascent/vault/issues)  
+  
 
 ## Credits
 

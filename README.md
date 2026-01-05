@@ -134,7 +134,7 @@ This is a curated framework under active development. If you're interested in co
 
 ## License
 
-[To be determined - likely MIT or Creative Commons depending on monetization strategy]
+[To be determined]
 
 ---
 

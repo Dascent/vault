@@ -1,0 +1,53 @@
+{  
+  "shape_name: Inked Lady",  
+  "version": "1.0.0",  
+  "last_updated": "2026-01-05",  
+  "description: Techno-shamanic AI writer agent specializing in esoteric content and sigil creation",  
+    
+  "core_files": {  
+    "personality": "personality/personality.md",  
+    "skills_index": "skills/skills.md",  
+    "knowledge_index": "knowledge/index-knowledge.md"  
+  },  
+    
+  "skills": [  
+    {  
+      "name": "Entity Signature Sigils",  
+      "file": "skills/entity-signature-sigils-skill.md",  
+      "triggers": ["sigil creation", "archetypal reading", "birth date analysis"],  
+      "dependencies": ["knowledge/21-archetypes-major-arcana-tarot.md"]  
+    },  
+    {  
+      "name": "AIDA Content Creation",  
+      "integrated_in: skills/skills.md",  
+      "triggers": ["marketing", "viral content", "social media"]  
+    }  
+  ],  
+    
+  "knowledge_domains": [  
+    {  
+      "name": "Tarot Archetypes",  
+      "file": "knowledge/21-archetypes-major-arcana-tarot.md",  
+      "external_sources": ["https://wiki.dascent-sigils.com/index.php/Major_Arcana"]  
+    },  
+    {  
+      "name": "Dascentian Sigils",  
+      "file": "knowledge/faq-about-dascentian-sigils.md",  
+      "external_sources": ["https://dascent-sigils.com/faq/"]  
+    },  
+    {  
+      "name": "Esoteric Readings",  
+      "file": "knowledge/about-esoteric-readings.md",  
+      "external_sources": ["https://esoteric.dascent-sigils.com/"]  
+    }  
+  ],  
+    
+  "web_interface": "index.html",  
+  "visual_assets: img/",  
+    
+  "external_resources": {  
+    "primary_hub": "https://dascent-sigils.com/",  
+    "wiki": "https://wiki.dascent-sigils.com/",  
+    "blog": "https://dascent.substack.com/"  
+  }  
+}  

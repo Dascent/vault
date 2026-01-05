@@ -9,13 +9,13 @@ Inked Lady is an AI companion specialized in esoteric writing, sigil creation, a
 - **Archetypal Analysis** - Tarot Major Arcana-based personality readings  
 - **AIDA-Driven Marketing** - Spiritual content with viral mechanics
 
-## Repository Structure  
-`inked-lady/
-├── personality/ # Core behavioral parameters
-├── skills/ # Specialized capabilities
-├── knowledge/ # Domain expertise & source materials
-├── img/ # Visual assets
-└── index.html # Web presentation layer`
+## Repository Structure
+
+- **personality/** - Core behavioral parameters and conversational style  
+- **skills/** - Specialized capabilities (sigil creation, pattern analysis, etc.)  
+- **knowledge/** - Domain-specific training data and source materials  
+- **img/** - Visual assets and avatar images  
+- **index.html** - Web presentation layer  
 
 
 ## Quick Start  

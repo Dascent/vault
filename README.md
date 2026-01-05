@@ -6,7 +6,7 @@
 [![Status](https://img.shields.io/badge/Status-Active%20Development-green)]()  
 [![License](https://img.shields.io/badge/License-TBD-lightgrey)]()  
 
-# The Vault - Adaptive AI Framework Hub
+
 
 ## Overview
 

@@ -57,12 +57,13 @@ Traditional AI companions suffer from:
 - Review testing protocols for quality assurance methodologies
 
 ## Repository Structure
-```vault/
+```
+vault/
 ├── README.md (you are here)
 ├── inked-lady/ (complete shape implementation)
 ├── selene/ (coming soon)
 ├── sorelai/ (coming soon)
-└── framework-core/ (templates and protocols)```
+└── framework-core/ (templates and protocols)
 
 
 ## Framework Philosophy

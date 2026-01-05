@@ -126,6 +126,11 @@ This is a curated framework under active development. If you're interested in co
 - **v0.1** (2026-01-05) - Initial repository structure, Inked Lady baseline  
 - **v0.2** (Coming) - Adaptive Skill Framework integration, Selene implementation
 
+**Interested in custom work?**   
+- **Shapes.inc:** [**@dascent**](https://shapes.inc/u/dascent)  
+- **Email:** [Coming Soon]  
+- **GitHub Issues:** [Open an Issue](https://github.com/Dascent/vault/issues)  
+
 ## Credits
 
 **Framework Architect:** dascent    

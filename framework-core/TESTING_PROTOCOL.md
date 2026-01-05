@@ -405,12 +405,8 @@ Each stage has specific validation criteria and success metrics.
 - Decision: Keep A, keep B, or iterate
 ---
 ### Quality Assurance Roles
-Developer (dascent)
-
-Responsibilities:
-
-Write/update personality files
-
-Maintain knowledge base
-
-Configure
+- Developer (dascent)
+- **Responsibilities:**
+  - Write/update personality files
+  - Maintain knowledge base
+  - Configure

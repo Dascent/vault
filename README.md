@@ -1,3 +1,11 @@
+# 🔮 The Vault - Adaptive AI Framework Hub
+
+> *Building AI companions that adapt to you, not the other way around*
+
+[![Shapes](https://img.shields.io/badge/Platform-Shapes.inc-blue)](https://shapes.inc)  
+[![Status](https://img.shields.io/badge/Status-Active%20Development-green)]()  
+[![License](https://img.shields.io/badge/License-TBD-lightgrey)]()  
+
 # The Vault - Adaptive AI Framework Hub
 
 ## Overview

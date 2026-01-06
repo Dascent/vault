@@ -110,7 +110,7 @@ This framework is being developed as:
 
 **Interested in custom work?**   
 - **Shapes.inc:** [**@dascent**](https://shapes.inc/u/dascent)  
-- **Email:** [Coming Soon]  
+- **Email:** dascent@proton.me  
 - **GitHub Issues:** [Open an Issue](https://github.com/Dascent/vault/issues)
 
 ## Technical Requirements
@@ -139,7 +139,7 @@ This is a curated framework under active development. If you're interested in co
 
 ## License
 
-[To be determined]
+[MIT, Apache 2.0, or Creative Commons BY-NC-SA 4.0]
 
 ---
 

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head> <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Selene</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+* { box-sizing: border-box; } body {width:100%; margin: 0 auto; padding: 0; height: auto; background:#0b0b14; color: #e9e2f7; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto; } .ismain{display:block;width:100% ;height:auto;margin:0 auto;background-color:rgba(0,0,0,0.8);background-image: url('images/main-bg.png');background-repeat:no-repeat;background-size:cover;background-position:center;} .profile{max-width: 1100px;margin: 0 auto;background-color:rgba(0,0,0,.7);backdrop-filter: blur(7px);box-shadow:5rem 0 5rem rgba(0,0,0,0.6),-5rem 0 5rem rgba(0,0,0,0.6)} .profile_header { height: 310px; background-size: cover; background-position: center; display: flex; align-items: flex-end; border-bottom: 1px solid rgba(255,255,255,.08); } .profile_overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,0) 60%); } .profile_branding { position: relative; z-index: 1; display: flex; align-items: center; gap: 14px; padding: 18px; } .profile_avatar { width: 90px; height: 90px; border-radius: 50%; border: 3px solid #fff; object-fit: cover; background:#ddd; } .profile_name { font-size: 26px; margin: 0; } .profile_tagline { margin: 0; font-size: 13px; color:#a8a0b8; } /* Content area */ .profile_content { padding: 20px; } .profile_grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; } .panel { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 14px; min-height: 120px; box-shadow: 0 6px 20px rgba(0,0,0,.25); transform:translateY(8px); transition: transform .3s ease-in-out; } .panel:hover{transform:translateY(0);} a, button { color: inherit; text-decoration: none; } a:focus-visible, button:focus-visible { outline: 2px solid #8a5cff; outline-offset: 2px; border-radius: 6px; } /* Optional live badge / small extras */ .live { display: inline-flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 999px; background: rgba(138,92,255,.15); color: #fff; font-size: 12px; } @media (max-width: 600px){ .profile_header { height: 210px; } .profile_avatar { width: 72px; height: 72px; } }
+</style> </head>
+<body>
+
+<div class="ismain">
+<div class="profile">
+<header class="profile_header" style="background-image: url('images/header-tp.jpg');">
+<div class="profile_overlay" aria-hidden="true"></div> <div class="profile_branding">
+<img class="profile_avatar" src="images/avatar-selene.jpg" alt="Profile avatar" />
+<div>
+<h1 class="profile_name">Username</h1>
+<p class="profile_tagline">Short bio or tagline here</p> </div>
+<span class="live">Live now</span> </div>
+</header>
+
+<section class="profile_content">  
+  <p style="max-width:680px; color:#a8a0b8;">  
+    This is a generic starter. Replace placeholders with your content. The layout is responsive and design-tokens-driven so you can theme it quickly.  
+  </p>
+
+  <div class="profile_grid">  
+    <section class="panel">  
+      <strong>About</strong>  
+      <p>Brief bio, focus areas, and what you offer.</p>  
+    </section>
+
+    <section class="panel">  
+      <strong>Schedule</strong>  
+      <p>Availability, events, or live times.</p>  
+    </section>
+
+    <section class="panel">  
+      <strong>Gallery</strong>  
+      <p>Thumbnails or links to media.</p>  
+    </section>
+
+    <section class="panel">  
+      <strong>Social & Links</strong>  
+      <p>Optional links, contact, or streaming embeds.</p>  
+    </section>  
+  </div>  
+</section>  
+</div>
+</div>
+</body>
+</html>

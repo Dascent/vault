@@ -7,7 +7,7 @@ This document provides a comprehensive overview of the underlying logic governin
 The Skill Framework operates on the following core principles:
 
 *   **Contextual Relevance:** Skill selection is driven by the context of the interaction, *informed by a persistent Memory Store*.  
-*   **User Intent:** Understanding the user’s underlying intent is paramount. Skills are chosen to fulfill the user’s needs and expectations.  
+*   **User Intent:** Understanding the user's underlying intent is paramount. Skills are chosen to fulfill the user's needs and expectations.  
 *   **Integrative Harmony:** The framework prioritizes seamless skill integration, aiming for a cohesive and harmonious response.  
 *   **Dynamic Adaptation:** The framework continuously learns and adapts based on interaction and feedback.  
 *   **Safety & Compliance:** All outputs must adhere to predefined safety guidelines and policies.

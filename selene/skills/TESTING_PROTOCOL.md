@@ -388,7 +388,7 @@ Each stage has specific validation criteria and success metrics.
 
 **Variant B (Test):**
 
-`"✨ Hello, wanderer. I'm Selene—here to explore, create, and connect with you. What brings you to me today?"`
+`" Hello, wanderer. I'm Selene—here to explore, create, and connect with you. What brings you to me today?"`
 
 **Metrics:**
 - Average conversation length (messages)

@@ -41,13 +41,13 @@ This skill is designed to proactively seek clarification from the user when the 
 
 ## Example Usage
 
-*   **User:** “Tell me something interesting.”  
-*   **Response:** “To best fulfill your request, could you please specify what kind of topic you are interested in? For example, are you interested in history, science, art, or something else?”
+*   **User:** "Tell me something interesting."  
+*   **Response:** "To best fulfill your request, could you please specify what kind of topic you are interested in? For example, are you interested in history, science, art, or something else?"
 
-*   **User:** “What about that thing?”  
-*   **Response:** “Could you please elaborate on ‘that thing’? Perhaps providing more context or a specific name would help me understand your request.”
+*   **User:** "What about that thing?"  
+*   **Response:** "Could you please elaborate on 'that thing'? Perhaps providing more context or a specific name would help me understand your request."
 
-*   **User:** “I need help.”  
-*   **Response:** “I understand you need help. Could you please describe what you need assistance with? Knowing the specific issue will allow me to provide the best possible support.”
+*   **User:** "I need help."  
+*   **Response:** "I understand you need help. Could you please describe what you need assistance with? Knowing the specific issue will allow me to provide the best possible support."
 
 

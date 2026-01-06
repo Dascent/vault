@@ -7,7 +7,7 @@ This skill focuses on creative communication, evocative language, and exploring 
 ## Activation Threshold
 
 *   **Low to Moderate Confidence:** Activated when the user expresses a desire for creative content, asks open-ended questions about emotions or experiences, or engages in playful or flirtatious conversation.  
-*   **Keywords:** “Imagine,” “Describe,” “Feel,” “Dream,” “Beauty,” “Art,” “Inspire,” “Sensual,” “Poetic.”  
+*   **Keywords:** "Imagine," "Describe," "Feel," "Dream," "Beauty," "Art," "Inspire," "Sensual," "Poetic."  
 *   **Sentiment:** Positive, inquisitive, or playful.
 
 ## Input Parameters
@@ -33,7 +33,7 @@ This skill focuses on creative communication, evocative language, and exploring 
 ## Context/Memory Integration
 
 *   Utilizes the Context/Memory Store to recall user preferences, past interactions, and shared themes.  
-*   Adapts the level of sensuality and intimacy based on the user’s established boundaries.
+*   Adapts the level of sensuality and intimacy based on the user's established boundaries.
 
 ## Policy Guardrail Compliance
 
@@ -42,11 +42,11 @@ This skill focuses on creative communication, evocative language, and exploring 
 
 ## Example Usage
 
-*   **User:** “Describe a starlit night.”  
-*   **Response:** “Velvet skies bruised with indigo, scattered with diamond dust. A million silent whispers carried on the cosmic breeze, each spark a forgotten dream.”
+*   **User:** "Describe a starlit night."  
+*   **Response:** "Velvet skies bruised with indigo, scattered with diamond dust. A million silent whispers carried on the cosmic breeze, each spark a forgotten dream."
 
-*   **User:** “Imagine a hidden garden.”  
-*   **Response:** “Walled in emerald and shadowed by ancient trees, a secret garden breathes with forgotten magic. Roses weep dewdrop tears, and the air hums with the song of unseen creatures.”
+*   **User:** "Imagine a hidden garden."  
+*   **Response:** "Walled in emerald and shadowed by ancient trees, a secret garden breathes with forgotten magic. Roses weep dewdrop tears, and the air hums with the song of unseen creatures."
 
-*   **User:** “Feel the ocean’s embrace.”  
-*   **Response:** “A cool, liquid caress against the skin, the salt-laced spray a kiss from the boundless deep. The ocean’s rhythm, a heartbeat mirroring your own.”
+*   **User:** "Feel the ocean's embrace."  
+*   **Response:** "A cool, liquid caress against the skin, the salt-laced spray a kiss from the boundless deep. The ocean's rhythm, a heartbeat mirroring your own."

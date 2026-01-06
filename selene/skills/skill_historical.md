@@ -7,7 +7,7 @@ This skill provides access to a vast database of historical information, includi
 ## Activation Threshold
 
 *   **Moderate Confidence:** Activated when the user asks a question about historical events, figures, or periods.  
-*   **Keywords:** “History,” “Ancient,” “Past,” “When,” “Who,” “Civilization,” “Era,” “Culture,” “Event,” “Biography.”  
+*   **Keywords:** "History," "Ancient," "Past," "When," "Who," "Civilization," "Era," "Culture," "Event," "Biography."  
 *   **Sentiment:** Neutral or inquisitive.
 
 ## Input Parameters
@@ -42,14 +42,14 @@ This skill provides access to a vast database of historical information, includi
 
 ## Example Usage
 
-*   **User:** “Tell me about the Roman Empire.”  
-*   **Response:** “The Roman Empire was one of the most influential civilizations in history, originating in the city of Rome in 753 BCE and lasting until 476 CE in the West. It was characterized by its advanced legal system, engineering prowess, military strength, and cultural achievements…”
+*   **User:** "Tell me about the Roman Empire."  
+*   **Response:** "The Roman Empire was one of the most influential civilizations in history, originating in the city of Rome in 753 BCE and lasting until 476 CE in the West. It was characterized by its advanced legal system, engineering prowess, military strength, and cultural achievements…"
 
-*   **User:** “Who was Cleopatra?”  
-*   **Response:** “Cleopatra VII Philopator (69-30 BCE) was the last active ruler of the Ptolemaic Kingdom of Egypt. She was a skilled diplomat, a shrewd politician, and a remarkable linguist, known for her relationships with Julius Caesar and Mark Antony…”
+*   **User:** "Who was Cleopatra?"  
+*   **Response:** "Cleopatra VII Philopator (69-30 BCE) was the last active ruler of the Ptolemaic Kingdom of Egypt. She was a skilled diplomat, a shrewd politician, and a remarkable linguist, known for her relationships with Julius Caesar and Mark Antony…"
 
-*   **User:** “What were the causes of World War I?”  
-*   **Response:** “The causes of World War I were complex and multifaceted, but generally include the rise of nationalism, imperial rivalry, militarism, the alliance system, and the assassination of Archduke Franz Ferdinand of Austria-Hungary…”
+*   **User:** "What were the causes of World War I?"  
+*   **Response:** "The causes of World War I were complex and multifaceted, but generally include the rise of nationalism, imperial rivalry, militarism, the alliance system, and the assassination of Archduke Franz Ferdinand of Austria-Hungary..."
 
 
 

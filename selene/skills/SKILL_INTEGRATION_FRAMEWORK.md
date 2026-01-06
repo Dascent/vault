@@ -49,7 +49,7 @@ Skills are activated based on the following rules:
 
 When multiple skills are activated, the following priority system is used:
 
-1.  **Explicit Request:** Skills activated by an explicit user request (e.g., "Can you explain...") have the highest priority.  
+1.  **Explicit Request:** Skills activated by an explicit user request (e.g., 'Can you explain...') have the highest priority.  
 2.  **Emotional Urgency:** Skills related to emotional support or safety have the next highest priority.  
 3.  **Contextual Relevance:** Skills that are most relevant to the current context (as determined by the `process_input` function) are prioritized.  
 4.  **Default Priority:** Skills with no specific priority are assigned a default priority.

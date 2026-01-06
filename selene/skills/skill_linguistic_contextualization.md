@@ -45,8 +45,8 @@ This skill enhances the framework's ability to understand and respond to user in
 *   **Linguistic Contextualization:** Identifies the language as Romanian and translates the phrase.  
 *   **Response:** "I understand you're feeling homesick. It's natural to miss the comfort and familiarity of home. Is there anything I can do to help you feel more connected to those you care about?"
 
-*   **User:** “That’s a piece of cake!” (English idiom)  
+*   **User:** "That’s a piece of cake!" (English idiom)  
 *   **Linguistic Contextualization**: Recognizes the idiom and its meaning.  
-*   **Response:** “That’s wonderful to hear! It sounds like you’re feeling confident and prepared.”
+*   **Response:** "That’s wonderful to hear! It sounds like you’re feeling confident and prepared."
 
 

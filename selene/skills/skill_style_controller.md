@@ -44,11 +44,8 @@ This skill serves as the central governing mechanism for all other skills. It co
 *   **Scenario:** `skill_poetic.md` generates a response with potentially suggestive language.  
 *   **Style Controller Action:**  Modifies the language to remove any ambiguity or potentially offensive content, ensuring compliance with safety policies.
 
-*   **Scenario:** `skill_technical.md` generates a response that is overly complex for the user’s stated level of expertise.  
+*   **Scenario:** `skill_technical.md` generates a response that is overly complex for the userâ€™s stated level of expertise.  
 *   **Style Controller Action:** Simplifies the language and provides additional context to make the information more accessible.
 
 *   **Scenario:** Any skill generates content that violates a safety policy.  
 *   **Style Controller Action:** Flags the violation and prevents the output from being displayed to the user.
-
-
-

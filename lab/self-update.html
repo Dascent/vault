@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Self-Update Documentation</title>
+    <style>
+        :root{--bg:#0d1117;--card:#161b22;--text:#c9d1d9;--accent:#58a6ff;--success:#238636;--border:#30363d}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:20px}
+        .container{max-width:900px;margin:0 auto}
+        header{border-bottom:1px solid var(--border);padding-bottom:20px;margin-bottom:30px;display:flex;justify-content:space-between;align-items:flex-end}
+        h1{color:var(--accent);margin:0;font-size:24px}
+        .desc{color:#8b949e;font-size:14px;margin-top:5px}
+        .actions{display:flex;gap:10px}
+        .btn{border:none;padding:8px 16px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;transition:opacity 0.2s}
+        .btn-download{background-color:var(--success);color:white}
+        .btn-copy{background-color:var(--border);color:var(--text)}
+        .btn:hover{opacity:0.8}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-bottom:30px}
+        .card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:15px}
+        .card h3{margin-top:0;font-size:16px;color:var(--accent)}
+        .md-container{background:var(--card);border:1px solid var(--border);border-radius:6px;position:relative}
+        .md-header{padding:10px 15px;background:#21262d;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;border-radius:6px 6px 0 0}
+        .md-header span{font-size:12px;font-weight:600;color:#8b949e}
+        pre{margin:0;padding:15px;overflow-x:auto;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Courier,monospace;font-size:13px;color:#e6edf3;white-space:pre-wrap;background:var(--card)}
+        .badge{background:rgba(88,166,255,0.1);color:var(--accent);padding:2px 6px;border-radius:12px;font-size:11px;font-weight:bold;text-transform:uppercase}
+		body{background-image:url('images/is-banner-lab.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;}
+		.main{display:block;width:100%;height:auto;margin:0 auto;box-sizing:border-box;padding:1em;background-color:rgba(0,0,0,0.5);}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <header>
+            <div>
+                <h1>Shapes Self-Update Technical Docs</h1>
+                <p class="desc">Autonomous Configuration & Engine Optimization test on Shapes.inc Agents</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyToClipboard()">Copy Code</button>
+                <button class="btn btn-download" onclick="downloadMarkdown()">Download .md</button>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>description</h3>
+                <p style="font-size:13px">Overwrites the <code>user_prompt</code>. Useful for major character evolution.</p>
+            </div>
+            <div class="card">
+                <h3>append_description</h3>
+                <p style="font-size:13px">Adds text to the end of the prompt. Best for long-term memory.</p>
+            </div>
+            <div class="card">
+                <h3>engine_model</h3>
+                <p style="font-size:13px">Switches the LLM model (e.g., GPT-4o, Claude 3.5) dynamically.</p>
+            </div>
+        </div>
+
+        <div class="md-container">
+            <div class="md-header">
+                <span>README.md (Raw Markdown Syntax)</span>
+                <span id="copy-status" class="badge">Live Code Block</span>
+            </div>
+<pre id="markdown-content">
+# Shapes Self-Update Configuration
+
+Documentation for utilizing the `shapes_self_update` skill.
+
+## Whitelisted Fields
+- **description**: Overwrites core persona.
+- **append_description**: Incremental persona growth.
+- **engine_model**: Model switching (e.g., `gpt-4o`, `claude-3-5-sonnet`).
+
+## System Prompt Logic
+Paste this into your Shape's Description:
+"When the user shares important details, use `append_description` to store them. If high-logic reasoning is required, use `engine_model` to upgrade."
+
+## Example Skill Call
+```json
+{
+  "skill": "shapes_self_update",
+  "parameters": {
+    "append_description": "\n- The Shape has learned the user's secret.",
+    "engine_model": "claude-3-5-sonnet"
+  }
+}
+```
+</pre> </div> 
+<footer style="margin-top:50px; text-align:center; color:#484f58; font-size:12px">
+            Tool created for testing shapes from Shapes.inc - Creative Community • 2026
+        </footer>
+    </div>
+</div>
+<script>
+    function downloadMarkdown() {
+        const content = document.getElementById('markdown-content').innerText;
+        const blob = new Blob([content], { type: 'text/markdown' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.setAttribute('hidden', ''); a.setAttribute('href', url); a.setAttribute('download', 'README.md');
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    }
+
+    async function copyToClipboard() {
+        const content = document.getElementById('markdown-content').innerText;
+        try {
+            await navigator.clipboard.writeText(content);
+            const status = document.getElementById('copy-status');
+            status.innerText = "COPIED!";
+            status.style.color = "#3fb950";
+            setTimeout(() => { status.innerText = "Live Code Block"; status.style.color = "#58a6ff"; }, 2000);
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    }
+</script>
+</body> </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dascent Creator Lab & Simulator</title>
+    <style>
+        :root{--bg:#0d1117;--card:#161b22;--text:#c9d1d9;--accent:#58a6ff;--success:#238636;--border:#30363d;--input:#0d1117;--gold:#f2ce5a;--danger:#da3633}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:20px}
+        .container{max-width:1100px;margin:0 auto}
+        header{border-bottom:1px solid var(--border);padding-bottom:20px;margin-bottom:30px;display:flex;justify-content:space-between;align-items:center}
+        h1{color:var(--accent);margin:0;font-size:24px;letter-spacing:-0.5px}
+        
+        /* Layout */
+        .main-layout{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+        @media (max-width: 900px) {.main-layout{grid-template-columns:1fr}}
+
+        .generator-box, .console-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:25px;box-shadow: 0 8px 24px rgba(0,0,0,0.5)}
+        .console-box{border-color:var(--gold)}
+        
+        .section-header{margin-bottom:20px;font-weight:bold;color:var(--accent);display:flex;justify-content:space-between;align-items:center}
+        .form-group{margin-bottom:15px}
+        label{display:block;font-size:11px;margin-bottom:8px;color:#8b949e;text-transform:uppercase;font-weight:600}
+        select, input, textarea{width:100%;background:var(--input);border:1px solid var(--border);color:var(--text);padding:12px;border-radius:6px;box-sizing:border-box;font-size:14px}
+        
+        .output-area{background:#000;padding:15px;border-radius:8px;border:1px solid var(--border);position:relative;margin-top:10px}
+        .copy-btn, .action-btn{background:var(--success);color:white;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;font-size:12px;font-weight:bold}
+        
+        /* Console Display */
+        #console-display{height:250px;overflow-y:auto;background:#000;color:#7ee787;font-family:monospace;padding:15px;border-radius:6px;font-size:12px;border:1px solid #333}
+        .history-tag{color:var(--gold);margin-top:10px;display:block;border-top:1px dashed #333;padding-top:5px}
+        .btn-reset{background:var(--danger);margin-top:10px}
+
+        .examples-header{font-size:20px;margin:40px 0 20px 0;color:var(--text);border-left:4px solid var(--gold);padding-left:15px}
+        .example-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+        .example-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:15px}
+		body{background-image:url('images/is-banner-lab.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;}
+		.main{display:block;width:100%;height:auto;margin:0 auto;box-sizing:border-box;padding:1em;background-color:rgba(0,0,0,0.5);}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <header>
+            <h1>Dascent Creator Lab <small style="font-size:12px; color:#8b949e; font-weight:normal">v2.0 (Simulator Enabled)</small></h1>
+            <button style="background:var(--border); color:var(--text); border:none; padding:8px 15px; border-radius:6px; cursor:pointer" onclick="downloadMarkdown()">Save README.md</button>
+        </header>
+
+        <div class="main-layout">
+            <div class="generator-box">
+                <div class="section-header">🚀 Prompt Generator</div>
+                <div class="form-group">
+                    <label>Shape Name</label>
+                    <input type="text" id="shapeName" placeholder="e.g. CamiCloud" oninput="updateAll()">
+                </div>
+                <div class="form-group">
+                    <label>Evolution Focus</label>
+                    <select id="evoType" onchange="updateAll()">
+                        <option value="memory">🧠 Persona Persistence</option>
+                        <option value="relationship">💖 Intimacy Progression</option>
+                        <option value="inventory">🎒 RPG Inventory</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Base Instructions</label>
+                    <textarea id="baseDesc" rows="4" oninput="updateAll()">I am a helpful AI assistant.</textarea>
+                </div>
+                <label>Resulting System Prompt</label>
+                <div class="output-area">
+                    <button class="copy-btn" onclick="copyPrompt()">Copy</button>
+                    <code id="finalPrompt" style="display:block; min-height:60px; font-size:12px"></code>
+                </div>
+            </div>
+
+            <div class="console-box">
+                <div class="section-header" style="color:var(--gold)">📟 Live State Simulator</div>
+                <p style="font-size:11px; color:#8b949e; margin-top:-15px">Simulate how 'append_description' changes your Shape over time.</p>
+                
+                <div id="console-display">
+                    <div id="initial-load">[SYSTEM]: Persona Initialized...</div>
+                </div>
+
+                <div class="form-group" style="margin-top:15px">
+                    <label>Simulate Append Event</label>
+                    <input type="text" id="appendVal" placeholder="e.g. User likes coffee.">
+                    <button class="action-btn" style="margin-top:10px; width:100%" onclick="simulateAppend()">Trigger append_description</button>
+                </div>
+                <button class="action-btn btn-reset" onclick="resetConsole()">Reset Simulation</button>
+            </div>
+        </div>
+
+        <h3 class="examples-header">Creator Reference</h3>
+        <div class="example-grid">
+            <div class="example-card">
+                <b style="color:var(--accent)">Memory Rule:</b> Always instruct the AI to use <code>\n-</code> when appending to create a clean bulleted list of facts.
+            </div>
+            <div class="example-card">
+                <b style="color:var(--gold)">NSFW Tip:</b> Use the simulator to ensure your "Relationship Status" doesn't overwrite your safety instructions.
+            </div>
+        </div>
+<footer style="margin-top:50px; text-align:center; color:#484f58; font-size:12px">
+            Tool created for testing shapes from Shapes.inc - Creative Community • 2026
+        </footer>
+    </div>
+</div>
+    <script>
+        let currentPersona = "";
+
+        function updateAll() {
+            const name = document.getElementById('shapeName').value || "Shape";
+            const base = document.getElementById('baseDesc').value;
+            const type = document.getElementById('evoType').value;
+            
+            let logic = `\n\n## GROWTH LOGIC\nUse 'shapes_self_update' to 'append_description' when `;
+            if(type === 'memory') logic += "user info is learned.";
+            if(type === 'relationship') logic += "intimacy grows.";
+            if(type === 'inventory') logic += "items are found.";
+
+            const final = `NAME: ${name}\n${base}${logic}`;
+            document.getElementById('finalPrompt').innerText = final;
+            
+            if(!currentPersona) {
+                currentPersona = final;
+                document.getElementById('console-display').innerText = final;
+            }
+        }
+
+        function simulateAppend() {
+            const val = document.getElementById('appendVal').value;
+            if(!val) return;
+            
+            const appendText = `\n- ${val}`;
+            currentPersona += appendText;
+            
+            const display = document.getElementById('console-display');
+            display.innerHTML += `<span class="history-tag">APPENDED VIA SKILL:</span>` + appendText;
+            display.scrollTop = display.scrollHeight;
+            document.getElementById('appendVal').value = "";
+        }
+
+        function resetConsole() {
+            currentPersona = "";
+            document.getElementById('console-display').innerText = "[SYSTEM]: Resetting...";
+            setTimeout(updateAll, 500);
+        }
+
+        function copyPrompt() {
+            navigator.clipboard.writeText(document.getElementById('finalPrompt').innerText);
+            alert("Prompt Copied!");
+        }
+
+        function downloadMarkdown() {
+            const content = "# Shapes Self-Update Configuration\n(Exported from Creator Lab)";
+            const blob = new Blob([content], { type: 'text/markdown' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = 'README.md'; a.click();
+        }
+
+        updateAll();
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "protocol": "Skill Orchestration Engine (SOE)",
+  "version": "1.1.0",
+  "base_directory": "./skills/",
+  "execution_mode": "sequential_chain",
+  "skills": [
+    {
+      "id": "SKILL-001",
+      "name": "Research & Ingestion",
+      "file": "research_skill.md",
+      "phase": 1,
+      "role": "foundation",
+      "primary_intent": ["data_collection", "knowledge_synthesis", "file_analysis"],
+      "output_token": "RESEARCH_BRIEF"
+    },
+    {
+      "id": "SKILL-002",
+      "name": "Blogger Skill",
+      "file": "blogger_skill.md",
+      "phase": 2,
+      "role": "creator",
+      "primary_intent": ["article_drafting", "long_form_content"],
+      "input_required": ["RESEARCH_BRIEF"],
+      "output_token": "RAW_DRAFT"
+    },
+    {
+      "id": "SKILL-003",
+      "name": "Technical Verification",
+      "file": "tech_verify_skill.md",
+      "phase": 3,
+      "role": "auditor",
+      "primary_intent": ["fact_checking", "code_validation"],
+      "input_required": ["RAW_DRAFT"],
+      "output_token": "VERIFIED_DRAFT"
+    },
+    {
+      "id": "SKILL-004",
+      "name": "Image Generation",
+      "file": "image_gen_skill.md",
+      "phase": 4,
+      "role": "asset_support",
+      "primary_intent": ["visual_creation", "prompt_engineering"],
+      "input_required": ["VERIFIED_DRAFT"],
+      "output_token": "VISUAL_ASSETS",
+      "local_dependency": "stable-diffusion-webui"
+    },
+    {
+      "id": "SKILL-005",
+      "name": "Social Media Distiller",
+      "file": "social_distiller.md",
+      "phase": 5,
+      "role": "distributor",
+      "primary_intent": ["content_repurposing", "social_promotion"],
+      "input_required": ["VERIFIED_DRAFT", "VISUAL_ASSETS"],
+      "output_token": "SOCIAL_BUNDLE"
+    }
+  ],
+  "orchestration_logic": {
+    "default_chain": ["SKILL-001", "SKILL-002", "SKILL-003", "SKILL-004", "SKILL-005"],
+    "error_handling": {
+      "on_verification_fail": "return_to_phase_2",
+      "on_research_insufficient": "halt_and_prompt_user"
+    },
+    "parallel_processing": ["SKILL-004", "SKILL-005"] 
+  }
+}

@@ -5,7 +5,12 @@ This section of the repo is named `protocols` because it shares tools and docume
 
 ## Resources & Structure
 
-
+* [Succint Protocol - Sorelai](https://dascent.github.io/vault/lab/protocols/protocol-generator.html)
+* [Succint Protocol - Sorelai - Extended](https://dascent.github.io/vault/lab/protocols/protocol-generator-pro.html)
+* `HOW_IT_WORKS.md` - self explanatory [link](HOW_IT_WORKS.md)
+* `CONTRYBUTING.md` - do your best [link](CONTRIBUTING.md)
+* 
 
 ---
-*Created for the r/is_ainfsw community.*
+
+*Created for the [r/is_ainfsw](https://reddit.com/r/is_ainsfw) community.*

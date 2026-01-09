@@ -67,11 +67,15 @@ Traditional AI companions suffer from:
 ## Repository Structure
 ```
 vault/
-├── README.md (you are here)
-├── inked-lady/ (complete shape implementation)
-├── selene/ (coming soon)
-├── sorelai/ (coming soon)
-└── framework-core/ (templates and protocols)
+├── README.md (Main project documentation - you are here)
+├── index.html (Main web interface for the framework hub)
+├── img/ (Directory for image assets and visual resources)
+├── inked-lady/ (Complete shape implementation: pattern recognition specialist)
+├── selene/ (In-progress shape: cosmic companion)
+├── lab/ (Development and testing area for protocol generators)
+├── framework-core/ (Core templates, protocols, and framework documentation)
+├── core-skills/ (Library of modular skill modules and guidelines)
+└── cssmfc/ (Updated protocol generator, version 1.3)
 ```
 ---
 

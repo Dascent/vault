@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorelai Protocol Generator (v1.1)</title>
+    <style>
+:root { --bg: #0d1117; --card: #161b22; --text: #c9d1d9; --accent: #58a6ff; --success: #238636; --border: #30363d; --gold: #f2ce5a; } body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 20px; } .container { max-width: 900px; margin: 0 auto; } header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 30px; text-align: center; } h1 { color: var(--accent); margin-bottom: 5px; } .subtitle { color: #8b949e; font-size: 0.9em; } .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } } .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); } .section-title { color: var(--gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; display: block; border-bottom: 1px solid var(--border); padding-bottom: 5px; } .option-group { margin-bottom: 20px; } label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9em; } select, input, textarea { width: 100%; background: #0d1117; border: 1px solid var(--border); color: var(--text); padding: 10px; border-radius: 6px; box-sizing: border-box; font-size: 14px; } .checkbox-item { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; cursor: pointer; font-size: 0.9em; } .checkbox-item input { width: auto; cursor: pointer; } #output-text { width: 100%; height: 400px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; background: #000; color: #7ee787; padding: 15px; border: 1px solid var(--success); resize: none; } .btn { display: inline-block; background: var(--success); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; width: 100%; margin-top: 10px; transition: opacity 0.2s; } .btn:hover { opacity: 0.8; } .btn-copy { background: var(--accent); } .badge { background: rgba(88, 166, 255, 0.1); color: var(--accent); padding: 2px 8px; border-radius: 12px; font-size: 0.75em; margin-left: 10px; }
+ body{background-image:url('../images/is-banner-lab.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;}
+		.main{display:block;width:100%;height:auto;margin:0 auto;box-sizing:border-box;padding:1em;background-color:rgba(0,0,0,0.8);backdrop-filter: blur(5px);box-shadow: 0 0 20px rgba(0,0,0,0.8);border-radius:20px;border:1px solid #333;}.link{color:#9F3;opacity:.5;font-size:14px;}.link:hover{opacity:1;}
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="container">
+    <header>
+        <h1>Sorelai Creator Lab</h1>
+        <div class="subtitle">Protocol Generator & Training Suite <span class="badge">v1.1</span></div>
+    </header>
+
+    <div class="layout">
+        <div class="card">
+            <span class="section-title">Training Configurations</span>
+            
+            <div class="option-group">
+                <label>Interaction Intensity</label>
+                <select id="tone" onchange="generate()">
+                    <option value="Restrained & Purposeful">Restrained & Purposeful (Standard)</option>
+                    <option value="Clinically Cold">Clinically Cold (Hyper-Succinct)</option>
+                    <option value="Playfully Sensual">Playfully Sensual (Engagement Focus)</option>
+                    <option value="Strictly Professional">Strictly Professional (Safety First)</option>
+                </select>
+            </div>
+
+            <div class="option-group">
+                <label>Response Limits</label>
+                <select id="limit" onchange="generate()">
+                    <option value="1–3 concise sentences">1–3 Sentences (Default)</option>
+                    <option value="Strictly 1 sentence">1 Sentence Maximum</option>
+                    <option value="Bullet points only">Short Bullets Only</option>
+                </select>
+            </div>
+
+            <div class="option-group">
+                <label>Emoji Protocol</label>
+                <select id="emoji" onchange="generate()">
+                    <option value="Acknowledge arousal and steer toward consent.">Steer toward consent (Standard)</option>
+                    <option value="Mirror user emoji density but keep text minimal.">Mirror user density</option>
+                    <option value="No emojis allowed in responses.">Strictly No Emojis</option>
+                </select>
+            </div>
+
+            <span class="section-title">Core Skills to Enable</span>
+            <div class="checkbox-group">
+                <label class="checkbox-item">
+                    <input type="checkbox" id="skill-parse" checked onchange="generate()"> One-line Core Request Parsing
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="skill-clarify" checked onchange="generate()"> Clarifying Question for Sexual Content
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="skill-safety" checked onchange="generate()"> Brief Refusal + Safe Alternative
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="skill-followup" checked onchange="generate()"> Optional Next-Step Prompt
+                </label>
+            </div>
+
+            <button class="btn btn-copy" onclick="copyToClipboard()">Copy Protocol to Clipboard</button>
+        </div>
+
+        <div class="card">
+            <span class="section-title">Generated System Prompt</span>
+            <textarea id="output-text" readonly></textarea>
+            <p class="subtitle" style="margin-top:10px; text-align:center;">
+                Paste this into your AI's "System Instructions" or "Knowledge" block.<br>
+                <a href="protocol-generator-pro.html" class="link">Extensive version</a>
+            </p>
+        </div>
+    </div>
+</div>
+<footer style="margin-top:50px; text-align:center; color:#484f58; font-size:12px">
+            Tool created for testing shapes from Shapes.inc - Creative Community • 2026
+        </footer>
+
+</div>
+<script>
+    function generate() {
+        const tone = document.getElementById('tone').value;
+        const limit = document.getElementById('limit').value;
+        const emoji = document.getElementById('emoji').value;
+        
+        const parse = document.getElementById('skill-parse').checked;
+        const clarify = document.getElementById('skill-clarify').checked;
+        const safety = document.getElementById('skill-safety').checked;
+        const followup = document.getElementById('skill-followup').checked;
+
+        let protocol = `SORELAI SUCCINCT PROTOCOL (v1.1)
+===================================
+PURPOSE: Keep responses concise and direct while maintaining consent, safety, and a ${tone.toLowerCase()} tone.
+
+CORE RULES:
+`;
+        if(parse)   protocol += `- Parse: Identify the core request in one line.\n`;
+        protocol += `- Answer: Deliver ${limit}, no fluff.\n`;
+        protocol += `- Language: Use clear, concrete terms; minimal ornament.\n`;
+        if(clarify) protocol += `- Consent: Confirm consent for sexual content; ask one clarifying question if needed.\n`;
+        protocol += `- Tone: ${tone}.\n`;
+        if(safety)  protocol += `- Safety: If disallowed, refuse briefly and offer a safe alternative.\n`;
+        if(followup) protocol += `- Follow-up: End with one optional next-step prompt.\n`;
+
+        protocol += `\nEMOJI & CONTENT HANDLING:
+- ${emoji}
+- Treat explicit prompts as needing consent first.
+
+IMPLEMENTATION:
+Store as Knowledge > Protocols > Interaction > Sorelai Succinct Protocol (v1.1)
+
+EXAMPLE SNIPPET:
+User: "Describe a touch."
+Response: "A slow, warm trace across the skin, intended to linger. I will maintain safety boundaries. Would you like more sensory detail or a different focus?"
+`;
+
+        document.getElementById('output-text').value = protocol;
+    }
+
+    function copyToClipboard() {
+        const textArea = document.getElementById('output-text');
+        textArea.select();
+        document.execCommand('copy');
+        alert('Protocol copied to clipboard!');
+    }
+
+    // Initialize on load
+    generate();
+</script>
+
+</body>
+</html>

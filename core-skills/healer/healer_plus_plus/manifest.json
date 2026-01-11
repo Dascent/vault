@@ -1,0 +1,23 @@
+{  
+  "name": "Healer++",  
+  "version": "0.1.0-starter",  
+  "description": "Modular self-healing pills library for Shapes integration; self-diagnose and self-heal.",  
+  "dependencies": ["vault/framework-core", "Shapes"],  
+  "commands": [  
+    "heal.prune_memory",  
+    "heal.reset_prompts",  
+    "heal.tighten_output",  
+    "heal.freeze_context",  
+    "heal.run_diagnostics",  
+    "heal.dump_state",  
+    "heal.pause_shape",  
+    "heal.restart_shape",  
+    "heal.lock_output",  
+    "heal.unlock_output",  
+    "heal.escalate",  
+    "heal.apply_policy",  
+    "heal.update_guardrails"  
+  ],  
+  "entry_point": "starter.py",  
+  "language": "python"  
+}  

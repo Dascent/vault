@@ -1,15 +1,16 @@
-#Command: heal.pause_shape(duration: int)
-##Purpose
+# Command: heal.pause_shape(duration: int)
+## Purpose
 
 > Pause a shape's execution for a short window.
 
-##Usage
+## Usage
 
 - heal.pause_shape(duration=60)
 
-##Notes
+## Notes
 
 - **Safety:** usually gated by escalation policy for longer pauses.
+
 
 
 ---

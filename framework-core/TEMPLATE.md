@@ -30,4 +30,6 @@ This template provides a step-by-step guide for creating a new AI shape from scr
 
 ---
 
+[online generator](https://dascent.github.io/vault/lab/shape-creation-template.html)
+
 

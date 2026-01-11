@@ -1,13 +1,14 @@
-#Healer++ Knowledge Snippets
-##Purpose
+# Healer++ Knowledge Snippets
+# #Purpose
 
 > Provide quick-reference summaries, reasoning tips, and safe defaults for developers and shapes.
 
-##Contents
+## Contents
 
 - Quick-start heuristics
 - Common pitfalls
 - Safe defaults for non-destructive actions
 - How to reason about guardrails and policy overrides
+
 
 ---

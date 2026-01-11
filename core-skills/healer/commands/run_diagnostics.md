@@ -1,15 +1,16 @@
-#Command: heal.run_diagnostics()
-##Purpose
+# Command: heal.run_diagnostics()
+## Purpose
 
 > Collect health signals and provide a concise health report.
 
-##Usage
+## Usage
 
 - heal.run_diagnostics()
 
-##Output
+## Output
 
 - HealthReport: { healthSummary, metrics, recommendedAction }
+
 
 
 ---

@@ -1,15 +1,16 @@
-#Command: heal.freeze_context(window: int)
-##Purpose
+# Command: heal.freeze_context(window: int)
+## Purpose
 
 > Freeze or stabilize the current context window to reduce drift.
 
-##Usage
+## Usage
 
 - heal.freeze_context(window=6)
 
-##Notes
+## Notes
 
 - Temporary stabilization; can be lifted after a few turns.
+
 
 
 ---

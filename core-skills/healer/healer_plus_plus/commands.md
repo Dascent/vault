@@ -1,6 +1,6 @@
 # Healer++ Command Surface (starter)
 
-##Non-destructive first (preferred)
+## Non-destructive first (preferred)
   
 - heal.prune_memory(limit)  
   - Prune memory to keep the most recent N turns/fragments.  
@@ -42,7 +42,7 @@
   - Re-enable generation after safe conditions are met.  
   - Example: heal.unlock_output()
 
-Escalation and governance  
+## Escalation and governance  
 - heal.escalate(reason, level)  
   - Notify a human supervisor with structured summary.  
   - Example: heal.escalate(reason="Persistent spiral", level="critical")
@@ -55,8 +55,9 @@ Escalation and governance
   - Refine guardrails (token budgets, depth, tool usage).  
   - Example: heal.update_guardrails({ "max_tokens": 1024, "depth": 300 })
 
-**Persistence (optional)** 
+## Persistence (optional)
 - heal.persist_patch(patch_id, notes)  
 - heal.rollback_patch(patch_id)  
+
 
 ---

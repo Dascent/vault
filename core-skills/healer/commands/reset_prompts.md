@@ -1,15 +1,16 @@
-#Command: heal.reset_prompts(baseline: string)
-##Purpose
+# Command: heal.reset_prompts(baseline: string)
+## Purpose
 
 > Reset system/user prompts to a known safe baseline.
 
-##Usage
+## Usage
 
 - heal.reset_prompts(baseline="safe-default")
 
-##Notes
+## Notes
 
 - Use with caution; preserves user data but resets prompt augmentations.
+
 
 
 ---

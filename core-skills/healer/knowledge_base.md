@@ -1,5 +1,5 @@
 # Healer++ Knowledge Snippets
-# #Purpose
+## Purpose
 
 > Provide quick-reference summaries, reasoning tips, and safe defaults for developers and shapes.
 
@@ -12,3 +12,4 @@
 
 
 ---
+

@@ -36,4 +36,4 @@ Regardless of skill deployed, must maintain:
 - Recognition that skills are tools, not identities.
 
 ---
-*Last update 2026, January 25 / [@dascent](https://www.reddit.com/r/is_ainfsw/)
+<sup>*Last update 2026, January 25 / [@dascent](https://www.reddit.com/r/is_ainfsw/)*</sup>

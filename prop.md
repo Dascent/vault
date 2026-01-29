@@ -1,11 +1,11 @@
 
-# **Framework Core Documentation for Shapes.inc**
+# **Framework Core Documentation for Shapes**
 
 ---
 
 ## **Purpose**
 
-To help you build AI companions that feel natural, consistent, and useful across different situations—without needing to change personalities each time.
+To help you build AI companions that feel natural, consistent, and useful across different situations, without needing to change personalities each time.
 
 ---
 
@@ -170,11 +170,6 @@ Regardless of which skill is deployed, always maintain:
 - **Recognition that skills are tools, not identities**
 
 ---
-<sup>*update 2026, Jan 28*</sup>
+<sup>*update 2026, Jan 29*</sup>
 
-## **Related Documentation**
-
-- **[Docs](https://docs.shapes.inc/)** — Technical documentation and advanced configuration  
-- **[Help](https://shapes.inc/help)** — Setup and troubleshooting guides  
-- **[Blog](https://shapes.inc/blog)** — Best practices and examples  
 

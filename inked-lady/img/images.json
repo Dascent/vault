@@ -9,7 +9,6 @@
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/selfie-x-2.jpg"
   ],
-  ,
   "questions": [
      { q: "Red Planet?", a: ["Mars", "Venus", "Earth", "Jupiter"], c: "Mars" },
         { q: "Capital of France?", a: ["Paris", "Berlin", "London", "Rome"], c: "Paris" },

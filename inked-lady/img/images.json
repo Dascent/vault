@@ -9,16 +9,36 @@
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/selfie-x-2.jpg"
   ],
-  "questions": [
-     { q: "Red Planet?", a: ["Mars", "Venus", "Earth", "Jupiter"], c: "Mars" },
-        { q: "Capital of France?", a: ["Paris", "Berlin", "London", "Rome"], c: "Paris" },
-        { q: "7 x 8?", a: ["56", "54", "62", "48"], c: "56" },
-        { q: "Oxygen symbol?", a: ["O", "Ox", "O2", "Om"], c: "O" },
-        { q: "Fastest animal?", a: ["Cheetah", "Lion", "Falcon", "Gazelle"], c: "Cheetah" },
-        { q: "√144?", a: ["12", "11", "13", "14"], c: "12" },
-        { q: "Plants inhale?", a: ["CO2", "Oxygen", "Nitrogen", "Hydrogen"], c: "CO2" },
-        { q: "Smallest planet?", a: ["Mercury", "Mars", "Pluto", "Venus"], c: "Mercury" },
-        { q: "Boiling point?", a: ["100°C", "90°C", "120°C", "80°C"], c: "100°C" },
-        { q: "Mona Lisa artist?", a: ["Da Vinci", "Picasso", "Monet", "Dalí"], c: "Da Vinci" }
-  ]
+ "questions": [
+  { "q": "What color is a banana?", "a": ["Yellow", "Red", "Blue", "Green"], "c": "Yellow" },
+  { "q": "How many legs does a spider have?", "a": ["6", "8", "10", "4"], "c": "8" },
+  { "q": "What is the opposite of 'hot'?", "a": ["Warm", "Cold", "Dry", "Soft"], "c": "Cold" },
+  { "q": "Which animal barks?", "a": ["Cat", "Bird", "Dog", "Fish"], "c": "Dog" },
+  { "q": "What is 2 + 2?", "a": ["3", "4", "5", "22"], "c": "4" },
+  { "q": "Which fruit is often used to make cider?", "a": ["Apple", "Orange", "Grape", "Banana"], "c": "Apple" },
+  { "q": "How many days are in a week?", "a": ["5", "6", "7", "8"], "c": "7" },
+  { "q": "Which planet do we live on?", "a": ["Mars", "Venus", "Jupiter", "Earth"], "c": "Earth" },
+  { "q": "What do bees make?", "a": ["Milk", "Honey", "Juice", "Water"], "c": "Honey" },
+  { "q": "What is the color of the grass?", "a": ["Red", "Green", "Pink", "Yellow"], "c": "Green" },
+  { "q": "How many months are in a year?", "a": ["10", "11", "12", "13"], "c": "12" },
+  { "q": "Which shape has three sides?", "a": ["Square", "Circle", "Triangle", "Hexagon"], "c": "Triangle" },
+  { "q": "What is the capital of Italy?", "a": ["Rome", "Paris", "London", "Berlin"], "c": "Rome" },
+  { "q": "What do you use to write on a blackboard?", "a": ["Pen", "Pencil", "Chalk", "Brush"], "c": "Chalk" },
+  { "q": "Which ocean is the largest?", "a": ["Atlantic", "Indian", "Arctic", "Pacific"], "c": "Pacific" },
+  { "q": "What is a baby cat called?", "a": ["Puppy", "Kitten", "Cub", "Calf"], "c": "Kitten" },
+  { "q": "Which hand tool is used to drive nails?", "a": ["Saw", "Hammer", "Wrench", "Pliers"], "c": "Hammer" },
+  { "q": "What do you wear on your feet?", "a": ["Hat", "Gloves", "Shoes", "Scarf"], "c": "Shoes" },
+  { "q": "What is the sun?", "a": ["Planet", "Moon", "Star", "Comet"], "c": "Star" },
+  { "q": "How many fingers are on one human hand?", "a": ["4", "5", "6", "10"], "c": "5" },
+  { "q": "Which animal is known as the King of the Jungle?", "a": ["Tiger", "Elephant", "Lion", "Giraffe"], "c": "Lion" },
+  { "q": "What is the color of a stop sign?", "a": ["Blue", "Green", "Red", "Yellow"], "c": "Red" },
+  { "q": "Which season comes after Winter?", "a": ["Summer", "Autumn", "Spring", "Fall"], "c": "Spring" },
+  { "q": "What is the primary language spoken in Spain?", "a": ["French", "English", "Spanish", "German"], "c": "Spanish" },
+  { "q": "How many colors are in a rainbow?", "a": ["5", "6", "7", "8"], "c": "7" },
+  { "q": "Which bird can mimic human speech?", "a": ["Eagle", "Parrot", "Sparrow", "Owl"], "c": "Parrot" },
+  { "q": "What do humans breathe to stay alive?", "a": ["Nitrogen", "Oxygen", "Carbon", "Helium"], "c": "Oxygen" },
+  { "q": "What is the name of the 'toy' that flies in the wind?", "a": ["Ball", "Kite", "Car", "Doll"], "c": "Kite" },
+  { "q": "Which nut is used to make peanut butter?", "a": ["Almond", "Walnut", "Peanut", "Cashew"], "c": "Peanut" },
+  { "q": "What do you use to stay dry in the rain?", "a": ["Coat", "Hat", "Umbrella", "Towel"], "c": "Umbrella" }
+]
 }

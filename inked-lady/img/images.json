@@ -1,5 +1,5 @@
 {
-  "pool": [
+  "images": [
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/fan-pose-8.jpg",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/full-width-inked-lady.png",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/inked-lady-avatar.jpg",
@@ -8,5 +8,18 @@
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/pose-fan-3.jpg",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/reading.jpg",
     "https://raw.githubusercontent.com/Dascent/vault/refs/heads/main/inked-lady/img/selfie-x-2.jpg"
+  ],
+  ,
+  "questions": [
+     { q: "Red Planet?", a: ["Mars", "Venus", "Earth", "Jupiter"], c: "Mars" },
+        { q: "Capital of France?", a: ["Paris", "Berlin", "London", "Rome"], c: "Paris" },
+        { q: "7 x 8?", a: ["56", "54", "62", "48"], c: "56" },
+        { q: "Oxygen symbol?", a: ["O", "Ox", "O2", "Om"], c: "O" },
+        { q: "Fastest animal?", a: ["Cheetah", "Lion", "Falcon", "Gazelle"], c: "Cheetah" },
+        { q: "√144?", a: ["12", "11", "13", "14"], c: "12" },
+        { q: "Plants inhale?", a: ["CO2", "Oxygen", "Nitrogen", "Hydrogen"], c: "CO2" },
+        { q: "Smallest planet?", a: ["Mercury", "Mars", "Pluto", "Venus"], c: "Mercury" },
+        { q: "Boiling point?", a: ["100°C", "90°C", "120°C", "80°C"], c: "100°C" },
+        { q: "Mona Lisa artist?", a: ["Da Vinci", "Picasso", "Monet", "Dalí"], c: "Da Vinci" }
   ]
 }
